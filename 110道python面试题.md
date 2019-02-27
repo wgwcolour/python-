@@ -90,3 +90,40 @@ li = [1,2,3,4,5]
 [i for i in map(lambda x:x**2,li) if i > 10] # [16,25]
 ```
 
+14、python中生成随机整数、随机小数、0—1之间小数方法 
+
+```python
+import random
+random.randint(0,100)# 0-100随机整数
+random.uniform(0,100) # 0-100随机小数 
+random.random() # 0-1之间随机小数
+```
+
+15、避免转义给字符串加哪个字母表示原始字符串？ 
+
+```python
+r'str'
+```
+
+16、```<div class="nam">中国</div>```，用正则匹配出标签里面的内容（“中国”），其中class的类名是不确定的 
+
+```python
+import re
+html = '<div class="nam">中国</div>'
+rule = re.compile('>(.*?)<')
+nam = re.findall(rule,html)[0]
+```
+
+17、python中断言方法举例 
+
+```python
+a = 2
+assert a == 3 # 将报错：AssertionError
+```
+
+18、数据表student有id,name,score,city字段，其中name中的名字可有重复，需要消除重复行,请写sql语句 
+
+```sql
+select distinct name from student --查询出name并排重。。
+```
+
