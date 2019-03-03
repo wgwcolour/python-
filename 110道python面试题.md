@@ -127,3 +127,141 @@ assert a == 3 # 将报错：AssertionError
 select distinct name from student --查询出name并排重。。
 ```
 
+19、10个Linux常用命令 
+
+```python
+暂无
+```
+
+20、python2和python3区别？列举5个 
+
+```puyhon
+print、range(xrange)、class(object)、？
+```
+
+21、列出python中可变数据类型和不可变数据类型，并简述原理 
+
+```python
+不可变：元组、集合、字符串、数字
+可变：列表、字典
+原理：？
+```
+
+22、s = “ajldjlajfdljfddd”，去重并从小到大排序输出”adfjl” 
+
+```python
+print(''.join(sorted(set(s))))
+```
+
+23、用lambda函数实现两个数相乘 
+
+```python
+lambda x,y:x*y
+```
+
+25、利用collections库的Counter方法统计字符串每个单词出现的次数”kjalfj;ldsjafl;hdsllfdhg;lahfbl;hl;ahlf;h” 
+
+```python
+不会？
+```
+
+26、字符串a = “not 404 found 张三 99 深圳”，每个词中间是空格，用正则过滤掉英文和数字，最终输出”张三  深圳” 
+
+```python
+import re
+rule = re.compile("[a-z]+\s[0-9]+\s[a-z]+\s|99")
+re.sub(rule,'',a)
+```
+
+27、filter方法求出列表所有奇数并构造新列表，a =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+```python
+def j(n):
+    if n%2 == 1:
+        return n
+[i for i in filter(j,a)]
+```
+
+28、列表推导式求列表所有奇数并构造新列表，a =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+```python
+[i for i in a if i%2==1]
+```
+
+29、正则re.complie作用 
+
+```python
+构建一个过滤规则
+```
+
+30、a=（1，）b=(1)，c=(“1”) 分别是什么类型的数据？ 
+
+```python
+tuple，int，string
+```
+
+31、两个列表[1,5,7,9]和[2,2,6,8]合并为[1,2,2,3,6,7,8,9] 
+
+```python
+题目错了吧？
+sorted([1,5,7,9]+[2,2,6,8])
+```
+
+32、用python删除文件和用linux命令删除文件方法 
+
+```python
+不会？
+```
+
+33、log日志中，我们需要用时间戳记录error,warning等的发生时间，请用datetime模块打印当前时间戳 “2018-04-01 11:38:54” 
+
+```python
+import datetime
+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+```
+
+34、数据库优化查询方法 
+
+```python
+优化sql语句，建索引，不使用select *……
+```
+
+35、请列出你会的任意一种统计图（条形图、折线图等）绘制的开源库，第三方也行 
+
+```python
+pyecharts
+```
+
+36、写一段自定义异常代码 
+
+```python
+a = 1
+if a == 1:
+    raise TypeError("类型错误")
+```
+
+37、正则表达式匹配中，（.*）和（.*?）匹配区别？ 
+
+```python
+贪婪匹配和非贪婪匹配。贪婪匹配会尽可能多的匹配结果，非贪婪匹配相反。好像有点问题。(.)是一个任意字符，(.?)是什么呢
+```
+
+38、简述Django的orm 
+
+```python
+不会呀？
+```
+
+39、[[1,2],[3,4],[5,6]]一行代码展开该列表，得出[1,2,3,4,5,6] 
+
+```python
+[i for s in [[1,2],[3,4],[5,6]] for i in s]
+```
+
+40、x=”abc”,y=”def”,z=[“d”,”e”,”f”],分别求出x.join(y)和x.join(z)返回的结果 
+
+```python
+dabceabcf
+dabceabcf
+```
+
